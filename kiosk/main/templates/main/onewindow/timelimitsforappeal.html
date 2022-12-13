@@ -1,0 +1,23 @@
+{%extends 'main/Shell.html'%}
+{%block head%}Порядок и сроки обжалования принятых административных решений{%endblock%}
+
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'onewindow'%}">Назад</a></td>
+            <td><a class="toptext">Порядок и сроки обжалования принятых административных решений</a></td>
+        </tr>
+    </table>
+
+</div>
+{%endblock%}
+
+{%block body%}
+{%for el in data1%}
+        <div class="botton_color">
+                <img class="photo" src="{{ el.timelimitsforappeal_photo.url }}" >
+                <p href="{{ el.timelimitsforappeal}}" class="cool_text">{{ el.title1 }} {{el.times1}}</p>
+        </div>
+{%endfor%}
+{%endblock%}

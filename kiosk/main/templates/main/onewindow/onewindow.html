@@ -1,0 +1,30 @@
+{%extends 'main/layout.html'%}
+
+{%block head%}Информация по заявительному принципу одно окно{%endblock%}
+    {%block place%}
+<p class="top_text">Информация по заявительному принципу "Одно окно"</p>
+{%endblock%}
+{%block body%}
+<div class="main_table">
+<table class="main_table">
+    <tr>
+        <td><a href="{%url 'Leadership'%}" class="button_second_block">Структура руководства</a></td>
+        <td><a href="{%url 'list_of_normative_documents'%}" class="button_second_block">Перечень нормативных документов</a></td>
+        <td><a href="{%url 'WorkAndMeeting'%}" class="button_second_block">Режим работы и график приема граждан</a></td>
+    </tr>
+    <tr>
+        <td><a href="{%url 'ProceduresOneWindow'%}" class="button_second_block">Перечни административных процедур, осуществляемых ПУ "Полоцкгаз" по заявлениям граждан</a></td>
+        <td><a href="{%url 'Forms'%}" class="button_second_block">Формы(бланки) документов необходимых для обращения за осуществлением адинистративных процедур</a></td>
+        <td><a href="{%url 'RightsAndObligations'%}" class="button_second_block">Права и обязанности граждан при осуществлении администартивных процедур</a></td>
+    </tr>
+    <tr>
+        <td><a href="{%url 'claimbook'%}" class="button_second_block">Книга замечаний и предложений</a></td>
+        <td><a href="{%url 'timelimitsforappeal'%}" class="button_second_block">Порядок и сроки обжалования принятых административных решений</a></td>
+        <td><a href="{%url 'belarusbank'%}" class="button_second_block">Ближайшие банковские учреждения, расчетные счета</a></td>
+    </tr>
+</table>
+    </div>
+
+
+
+{%endblock%}

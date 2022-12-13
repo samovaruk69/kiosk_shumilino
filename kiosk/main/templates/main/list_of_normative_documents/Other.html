@@ -1,0 +1,19 @@
+
+{%extends 'main/layout.html'%}
+{%block head%}Другое{%endblock%}
+
+
+{%block place%}
+<p class="top_text">Другое</p>
+{%endblock%}
+{%block body%}
+{%for el in data%}
+
+<center>
+        <div class="botton_color">
+                <p href="{{ el.Other}}" class="names">{{ el.title }} {{el.times}}</p>
+                <embed class="docs_view" src="{{ el.Other_doc.url }}">
+        </div>
+</center>
+{%endfor%}
+{%endblock%}

@@ -1,0 +1,33 @@
+{%extends 'main/Shell.html'%}
+{%block head%}Заявление о выдаче справки о расчетах за потребленный природный газ{%endblock%}
+
+
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'Forms'%}">Назад</a></td>
+            <td><a class="toptext">Заявление о выдаче справки о расчетах за потребленный природный газ</a></td>
+        </tr>
+    </table>
+
+</div>
+{%endblock%}
+{%block body%}
+{%for el in data%}
+
+<center>
+        <div class="botton_color">
+                <embed class="docs_view" src="{{ el.Application_for_issuance_of_a_certificate_of_payments_for_consumed_natural_gas_doc.url }}" >
+                <p href="{{ el.Application_for_issuance_of_a_certificate_of_payments_for_consumed_natural_gas}}" class="cool_text">{{ el.title }} {{el.times}}</p>
+
+        </div>
+</center>
+{%endfor%}
+{%endblock%}
+
+
+
+
+
+

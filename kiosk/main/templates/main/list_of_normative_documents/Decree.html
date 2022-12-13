@@ -1,0 +1,27 @@
+{%extends 'main/Shell.html'%}
+{%block head%}Декреты{%endblock%}
+
+
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'list_of_normative_documents'%}">Назад</a></td>
+            <td><a class="toptext">Декреты</a></td>
+        </tr>
+    </table>
+
+</div>
+{%endblock%}
+{%block body%}
+{%for el in data%}
+
+<center>
+        <div class="botton_color">
+                <embed class="docs_view" src="{{ el.Decree_doc.url }}">
+                <p href="{{ el.Decree}}" class="cool_text">{{ el.title }} {{el.times}}</p>
+
+        </div>
+</center>
+{%endfor%}
+{%endblock%}

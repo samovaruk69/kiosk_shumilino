@@ -1,0 +1,24 @@
+{%extends 'main/Shell.html'%}
+{%block head%}Режим работы и график приема граждан{%endblock%}
+
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'onewindow'%}">Назад</a></td>
+            <td><a class="toptext">Режим работы и график приема граждан</a></td>
+        </tr>
+    </table>
+
+</div>
+{%endblock%}
+
+{%block body%}
+{%for el in data%}
+
+        <div class="botton_color">
+                <embed class="docs_view" src="{{ el.WorkAndMeeting_photo.url }}" >
+                <p href="{{ el.WorkAndMeeting}}" class="cool_text">{{ el.title }} {{el.times}}</p>
+        </div>
+{%endfor%}
+{%endblock%}

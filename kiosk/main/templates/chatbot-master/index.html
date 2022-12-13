@@ -1,0 +1,25 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chatbot</title>
+	<link rel="icon" href="{% static 'main/img/bot.png' %}" />
+	<link rel="stylesheet" href="{% static 'main/css/style.css' %}" />
+</head>
+
+<body>
+
+	<div id="container" class="container">
+		<div id="chat" class="chat">
+			<div id="messages" class="messages"></div>
+			<input id="input" type="text" placeholder="Задайте вопрос..." autocomplete="off" autofocus="true" />
+		</div>
+		<img src="{% static 'main/img/bot.png' %}" alt="bot_logo" height="500vh">
+	</div>
+</body>
+<script type="text/javascript" src="{% static 'main/js/index.js' %}" ></script>
+<script type="text/javascript" src="{% static 'main/js/constants.js' %}" ></script>
+<script type="text/javascript" src="{% static 'main/js/speech.js' %}" ></script>
+
+</html>

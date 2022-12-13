@@ -1,0 +1,31 @@
+{%extends 'main/Shell.html'%}
+{%block head%}Заявление на разрешение земляных работ{%endblock%}
+
+
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'Forms'%}">Назад</a></td>
+            <td><a class="toptext">Заявление на разрешение земляных работ</a></td>
+        </tr>
+    </table>
+
+</div>
+{%endblock%}
+{%block body%}
+{%for el in data%}
+
+<center>
+        <div class="botton_color">
+                <embed class="docs_view" src="{{ el.Excavation_permit_application_doc.url }}" >
+                <p href="{{ el.Excavation_permit_application}}" class="cool_text">{{ el.title }} {{el.times}}</p>
+
+        </div>
+</center>
+{%endfor%}
+{%endblock%}
+
+
+
+

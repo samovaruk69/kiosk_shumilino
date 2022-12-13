@@ -1,0 +1,27 @@
+{%extends 'main/Shell.html'%}
+{%block head%}Заявления о списание задолженности{%endblock%}
+
+
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'Forms'%}">Назад</a></td>
+            <td><a class="toptext">Заявления о списание задолженности</a></td>
+        </tr>
+    </table>
+
+</div>
+{%endblock%}
+{%block body%}
+{%for el in data%}
+
+<center>
+        <div class="botton_color">
+                <embed class="docs_view" src="{{ el.Statements_for_writing_off_penalties_doc.url }}" >
+                <p href="{{ el.Statements_for_writing_off_penalties}}" class="cool_text">{{ el.title }} {{el.times}}</p>
+
+        </div>
+</center>
+{%endfor%}
+{%endblock%}

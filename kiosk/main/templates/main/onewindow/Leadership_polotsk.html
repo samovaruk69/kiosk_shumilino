@@ -1,0 +1,27 @@
+{%extends 'main/Shell.html'%}
+{%block head%}Руководство{%endblock%}
+
+
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'Leadership'%}">Назад</a></td>
+            <td><a class="toptext">Руководство ПУ "Полоцкгаз"</a></td>
+        </tr>
+    </table>
+
+</div>
+{%endblock%}
+
+{%block body%}
+{%for el in data%}
+<center>
+        <div class="botton_color">
+                <img class="photo" src="{{ el.Leadership_Polotsk_photo.url }}" >
+                <p href="{{ el.Leadership_Polotsk}}" class="cool_text">{{ el.title }} {{el.times}}</p>
+
+        </div>
+</center>
+{%endfor%}
+{%endblock%}

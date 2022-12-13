@@ -1,0 +1,36 @@
+{%extends 'main/Shell.html'%}
+
+{%block head%}Перечень нормативных документов{%endblock%}
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'onewindow'%}">Назад</a></td>
+            <td><a class="toptext">Перечень нормативных документов</a></td>
+        </tr>
+    </table>
+
+</div>
+{%endblock%}
+
+{%block body%}
+<center>
+<div class="Onewindow_main_table_position">
+<table class="Onewindow_table" cellspacing="10vh">
+    <tr>
+        <!--<td><a href="{%url 'Command'%}" class="button_table_list">Приказы</a></td>-->
+        <td><a href="{%url 'Order'%}" class="button_table_list">Распоряжения</a></td>
+        <td><a href="{%url 'Law'%}" class="button_table_list">Законы</a></td>
+    	<td><a href="{%url 'Decree'%}" class="button_table_list">Декреты</a></td>
+    </tr>
+    <tr>
+        <td><a href="{%url 'Directive'%}" class="button_table_list">Директивы</a></td>
+        <td><a href="{%url 'Ruling'%}" class="button_table_list">Постановления</a></td>
+        <td><a href="{%url 'prikaz'%}" class="button_table_list">Приказы</a></td>
+
+        
+    </tr>
+</table>
+    </div>
+    </center>
+{%endblock%}

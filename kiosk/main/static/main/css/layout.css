@@ -1,0 +1,287 @@
+.button_first_block{
+    width: 30vh;
+    height: 10vh;
+	color: #fff;
+	text-decoration: none;
+	background: #565656;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+	border: none;
+	transition: all 0.2s ease 0s;
+	text-align: center;
+    margin-top: 20px;
+    font-size: 2vh;
+    margin-left: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+}
+
+.first_left_block {
+    position: fixed;
+    float: left;
+    background-color: 7b7b7b;
+    width: 22%;
+    height: 100vh;
+    border-right: 6px solid #565656;
+}
+.first_left_block_test {
+    position: fixed;
+    float: left;
+    background-color: 7b7b7b;
+    width: 22%;
+    height: 100vh;
+    border-right: 6px solid #565656;
+}
+
+
+
+.names {
+    font-size: 22px;
+    font-family: "Trebuchet MS" "Arial";
+    color: #fff;
+}
+
+.docs_view {
+    width: 100vh;
+    height: 140vh;
+
+}
+
+.button_second_block{
+    width: 40vh;
+    height: 20vh;
+	color: #fff;
+	text-decoration: none;
+	background: #565656;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+	border: none;
+	transition: all 0.2s ease 0s;
+	text-align: center;
+    margin-top: 20px;
+    font-size: 2.5vh;
+    margin-left: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.second_left_block {
+    position: fixed;
+    float: left;
+    left: 25%;
+    width: 27%;
+    height: 100vh;
+    border-right: 6px solid #4d4d4d;
+    margin: 0;
+}
+
+
+
+.textstyle {
+    padding-left: 50%;
+    font-size: 3vh;
+    font-family: "Trebuchet MS" "Arial";
+   }
+
+
+.text_view{
+    padding-left: 53%;
+    font-size:  14;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.second_left_block_for_forms {
+    position: relative;
+    float: left;
+    left: 25%;
+    background: #fff;
+    width: 27%;
+    height: 200vh;
+    border-right: 6px solid #4d4d4d;
+    margin: 0;
+}
+
+.views_docs_statements {
+    position: fixed;
+    top: 8vh;
+    right: 5vh;
+    width: 70vh;
+    height: 90vh;
+}
+
+.text_view_statements{
+    position: fixed;
+    padding-left: 55%;
+    font-size:  14;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.docs_for_list_of_normative_documents {
+    padding-left: 53%;
+    width: 70vh;
+    height: 90vh;
+}
+
+
+.top_block {
+    height: 50vh;
+    padding-left: 50vh;
+}
+
+.down_block {
+    height: 50vh;
+    padding-left: 50vh;
+}
+
+.visible {
+    display: none;
+}
+
+
+.botton_for_layout_color {
+    background: #828282;
+    height: 80vh;
+    background-repeat: repeat-y;
+}
+
+
+.top_text {
+    padding-left: 40vh;
+    text-align: center;
+    font-size: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding-top: 5vh;
+
+}
+
+
+
+
+
+
+.topbar_color {
+    background: #565656;
+    height: 20vh;
+}
+
+
+/*done index*/
+.index_logo_image {
+    background-image: url(/static/main/img/infokiosk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.button_index {
+    width: 40vw;
+    height: 40vh;
+    background-color: transparent;
+    margin-left: 2vh;
+     border: none !important;
+
+}
+.button_place {
+    margin-left: 5%;
+
+}
+.logo{
+    width: 29vh;
+    padding-left: 25%;
+}
+
+
+/*done price and Videos*/
+.botton_color {
+    background: #828282;
+    height: 100%;
+    background-repeat: repeat-y;
+    padding-left: 25%;
+}
+
+
+/*done price and leadership*/
+.botton_color_for_menu {
+    background: #828282;
+    height: 80vh;
+    background-repeat: repeat-y;
+    padding-left: 20%;
+}
+.docs_view {
+    width: 100vh;
+    height: 140vh;
+
+}
+/*done onewindow*/
+.main_table {
+    position: fixed;
+    left: 22.5%;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+
+/* leadership_1234*/
+
+.button_second_block_test{
+    width: 25vh;
+    height: 15vh;
+	color: #fff;
+	text-decoration: none;
+	background: #565656;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+	border: none;
+	transition: all 0.2s ease 0s;
+	text-align: center;
+    font-size: 2.5vh;
+    margin-left: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 5vh;
+}
+.logo_leadership{
+    margin-top: 15vh;
+    height: 20vh;
+    margin-left: 5vh;
+
+
+}
+
+.photo {
+    height: 80vh;
+
+}
+.main_table_leadership {
+text-align: center;
+}
+
+.write_text {
+    text-align: center;
+    margin-left:25%;
+    color: #fff;
+}
+
+
+.main_table2 {
+
+    left: 22.5%;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+
+.botton_color2 {
+    background: #828282;
+    height: 100%;
+    background-repeat: repeat-y;
+    padding-left: 23%;
+}
+
+
+.otstup{
+    margin-top: 20vh;
+}

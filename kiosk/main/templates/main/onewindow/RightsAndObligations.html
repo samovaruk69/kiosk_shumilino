@@ -1,0 +1,24 @@
+{%extends 'main/Shell.html'%}
+{%block head%}Права и обязанности граждан при осуществлении административных процедур{%endblock%}
+
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'onewindow'%}">Назад</a></td>
+            <td><a class="toptext">Права и обязанности граждан при осуществлении административных процедур</a></td>
+        </tr>
+    </table>
+
+</div>
+{%endblock%}
+
+{%block body%}
+{%for el in data%}
+        <div class="botton_color">
+                <img class="photo" src="{{ el.RightsAndObligations_photo.url }}">
+                <p href="{{ el.RightsAndObligations}}" class="cool_text">{{ el.title }} {{el.times}}</p>
+
+        </div>
+{%endfor%}
+{%endblock%}

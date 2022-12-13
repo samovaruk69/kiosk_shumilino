@@ -1,0 +1,34 @@
+{%extends 'main/Shell.html'%}
+{%block head%}Заявление на принятие баллона{%endblock%}
+
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'Forms'%}">Назад</a></td>
+            <td><a class="toptext">Заявление на принятие баллона</a></td>
+        </tr>
+    </table>
+
+</div>
+{%endblock%}
+{%block body%}
+{%for el in data%}
+
+<center>
+        <div class="botton_color">
+                <embed class="docs_view" src="{{ el.Application_for_cylinder_acceptance_doc.url }}" >
+                <p href="{{ el.Application_for_cylinder_acceptance}}" class="cool_text">{{ el.title }} {{el.times}}</p>
+
+        </div>
+</center>
+{%endfor%}
+{%endblock%}
+
+
+
+
+
+
+
+

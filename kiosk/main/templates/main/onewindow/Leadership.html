@@ -1,0 +1,39 @@
+{%extends 'main/Shell.html'%}
+{%load static%}
+
+{%block head%}Структура руководства{%endblock%}
+
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'onewindow'%}">Назад</a></td>
+            <td><a class="toptext">Структура руководства</a></td>
+        </tr>
+    </table>
+
+</div>
+{%endblock%}
+{%block body%}
+<center>
+    <div class="Onewindow_main_table_position">
+    <table class="Onewindow_table" cellspacing="10vh">
+        <tr>
+          <td><a href="{%url 'Leadership_Minenergo'%}" class="button_table_leader">Руководство Минэнерго</a></td>
+        </tr>
+        <tr>
+          <td> <a href="{%url 'Leadership_Beltop'%}" class="button_table_leader">Руководство ГПО "Белтопгаз"</a></td>
+        </tr>
+        <tr>
+          <td><a href="{%url 'Leadership_Vitebsk'%}" class="button_table_leader">Руководство УП "Витебскоблгаз"</a></td>
+        </tr>
+        <tr>
+            <td><a href="{%url 'Leadership_Polotsk'%}" class="button_table_leader">Руководство ПУ "Полоцкгаз"</a></td>
+        </tr>
+        <tr>
+          <td><a href="{%url 'Leadership_Shumilino'%}" class="button_table_leader">Руководство Шумилинского РГС</a></td>
+        </tr>
+    </table>
+    </div>
+</center>
+{%endblock%}

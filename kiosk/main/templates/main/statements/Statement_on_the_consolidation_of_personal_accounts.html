@@ -1,0 +1,29 @@
+{%extends 'main/Shell.html'%}
+{%block head%}Заявление об обьеденении лицевых счетов{%endblock%}
+
+
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'Forms'%}">Назад</a></td>
+            <td><a class="toptext">Заявление об обьеденении лицевых счетов</a></td>
+        </tr>
+    </table>
+
+</div>
+{%endblock%}
+{%block body%}
+{%for el in data%}
+
+<center>
+        <div class="botton_color">
+                <embed class="docs_view" src="{{ el.Statement_on_the_consolidation_of_personal_accounts_doc.url }}" >
+                <p href="{{ el.Statement_on_the_consolidation_of_personal_accounts}}" class="cool_text">{{ el.title }} {{el.times}}</p>
+
+        </div>
+</center>
+{%endfor%}
+{%endblock%}
+
+

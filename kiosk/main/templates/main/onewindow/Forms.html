@@ -1,0 +1,58 @@
+{%extends 'main/Shell.html'%}
+
+{%block head%}Формы(бланки) документов необходимых для обращения за осуществлением адинистративных процедур{%endblock%}
+
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'onewindow'%}">Назад</a></td>
+            <td><a class="toptext">Формы(бланки) документов необходимых для обращения за осуществлением адинистративных процедур</a></td>
+        </tr>
+    </table>
+
+</div>
+{%endblock%}
+
+
+{%block body%}
+<div class="Onewindow_main_table_position">
+<table class="Onewindow_table">
+    <tr>
+        <td><a href="{%url 'Statements_for_writing_off_penalties'%}" class="button_table">Заявление на списание задолженности</a></td>
+        <!--<td><a href="{%url 'Liquefied_Petroleum_Gas_Supply_Statement'%}" class="button_table">Заявление о снабжении сжиженным углеводородным газом</a></td> -->
+        <td><a href="{%url 'Application_for_the_reconstruction_of_the_gas_supply_system'%}" class="button_table">Заявление о реконструкции системы газоснабжения</a></td>
+        <td><a href="{%url 'Absence_notice'%}" class="button_table">Извещение об отсутствии</a></td>
+
+    </tr>
+    <tr>
+        <td><a href="{%url 'Large_family_statement'%}" class="button_table">Заявление многодетной семьи</a></td>
+        <!--<td><a href="{%url 'Application_for_registration_of_a_discount_on_payment_for_consumed_gas'%}" class="button_table">Заявление об оформлении льготы об оплате за потребленный газ</a></td>-->
+        <td><a href="{%url 'Application_for_funding_design_and_survey_work'%}" class="button_table">Заявление на финансирование проектно-изыскательные работы</a></td>
+        <td><a href="{%url 'Extension_Statement'%}" class="button_table">Заявление о продлении технических условий</a></td>
+    </tr>
+    <tr>
+        <td><a href="{%url 'Statement_for_the_reconstruction_of_the_gas_supply_system'%}" class="button_table">Заявление по переустройству системы газоснабжения</a></td>
+        <td><a href="{%url 'Recalculation_statement'%}" class="button_table">Заявление о перерасчете</a></td>
+        <!--<td><a href="{%url 'Statement_on_the_consolidation_of_personal_accounts'%}" class="button_table">Заявление об обьеденении лицевых счетов</a></td>-->
+        <td><a href="{%url 'Application_for_financing_construction_and_installation_works'%}" class="button_table">Заявление на финансирование строительно-монтажных работ</a></td>
+
+    </tr>
+    <tr>
+        <td><a href="{%url 'Gas_startup_application'%}" class="button_table">Заявление на пуск газа</a></td>
+        <td><a href="{%url 'Application_for_issuance_of_a_certificate_of_payments_for_consumed_natural_gas'%}" class="button_table">Заявление о выдаче справки о расчетах за потребленный природный газ</a></td>
+        <td><a href="{%url 'Application_for_payment'%}" class="button_table">Заявление на сплату</a></td>
+    </tr>
+    <tr>
+        <td><a href="{%url 'Excavation_permit_application'%}" class="button_table">Заявление на разрешение земляных работ</a></td>
+        <td><a href="{%url 'Sidebar_application'%}" class="button_table">Заявление на врезку</a></td>
+        <td><a href="{%url 'Application_for_TU'%}" class="button_table">Заявление на ТУ</a></td>
+    </tr>
+    <tr>
+        <td><a href="{%url 'Application_for_liquidation_of_the_registered_IBU'%}" class="button_table">Заявлениена ликвидацию зарегестрированной ИБУ</a></td>
+        <td><a href="{%url 'Application_for_cylinder_acceptance'%}" class="button_table">Заявление на принятие баллона</a></td>
+    </tr>
+
+</table>
+    </div>
+{%endblock%}

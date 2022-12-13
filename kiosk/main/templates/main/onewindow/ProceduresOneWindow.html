@@ -1,0 +1,24 @@
+{%extends 'main/Shell.html'%}
+{%block head%}Перечни административных процедур, осуществляемых ПУ "Полоцкгаз" по заявлениям граждан{%endblock%}
+
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'onewindow'%}">Назад</a></td>
+            <td><a class="toptext">Перечни административных процедур, осуществляемых ПУ "Полоцкгаз" по заявлениям граждан</a></td>
+        </tr>
+    </table>
+
+</div>
+{%endblock%}
+
+{%block body%}
+{%for el in data%}
+        <div class="botton_color">
+                <embed class="docs_view" src="{{ el.ProceduresOneWindow_doc.url }}" >
+                <p href="{{ el.price}}" class="cool_text">{{ el.title }} {{el.times}}</p>
+
+        </div>
+{%endfor%}
+{%endblock%}

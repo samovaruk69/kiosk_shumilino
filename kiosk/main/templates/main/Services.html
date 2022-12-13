@@ -1,0 +1,24 @@
+{%extends 'main/Shell.html'%}
+{%block head%}Услуги оказываемые населению{%endblock%}
+
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'home'%}">Назад</a></td>
+            <td><a class="toptext">Услуги оказываемые населению</a></td>
+        </tr>
+    </table>
+
+</div>
+{%endblock%}
+
+{%block body%}
+{%for el in data%}
+
+        <div class="botton_color">
+                <embed class="docs_view" src="{{ el.Services_doc.url }}" >
+                <p href="{{ el.Services}}" class="cool_text">{{ el.title }} {{el.times}}</p>
+        </div>
+{%endfor%}
+{%endblock%}
