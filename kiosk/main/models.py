@@ -383,3 +383,11 @@ class Metan(models.Model):
 
     def __str__(self):
         return self.title
+
+class Test(models.Model):
+    title = models.CharField(max_length=150)
+    Test_doc = models.FileField(upload_to='test/')
+    times = models.DateField()
+
+    def __str__(self):
+        return self.title
