@@ -14,9 +14,25 @@
 {%endblock%}
 
 {%block body%}
-{%for el in data%}
-        <div class="botton_color">
-                <embed class="docs_view" src="{{ el.gas_potreb_doc.url }}" >
-        </div>
-{%endfor%}
+<center>
+    <div class="Onewindow_main_table_position">
+    <table class="Onewindow_table" cellspacing="10vh">
+        <tr>
+          <td><a href="{%url 'Gazification'%}" class="button_table_leader">Газификация</a></td>
+        </tr>
+        <tr>
+          <td> <a href="{%url 'Stroy_gaz'%}" class="button_table_leader">Строительство газопровода-ввода</a></td>
+        </tr>
+        <tr>
+          <td><a href="{%url 'Stroy_vvod'%}" class="button_table_leader">Строительство внутренней системы</a></td>
+        </tr>
+        <tr>
+            <td><a href="{%url 'Your_save'%}" class="button_table_leader">Ваша безопасность</a></td>
+        </tr>
+        <tr>
+          <td><a href="{%url 'Metan'%}" class="button_table_leader">Услуги ПУ "Метан"</a></td>
+        </tr>
+    </table>
+    </div>
+</center>
 {%endblock%}

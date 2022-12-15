@@ -57,6 +57,11 @@ urlpatterns = [
 
     path('onewindow/gas_potreb', views.gas_potreb_home, name='gas_potreb'),
 
+    path('onewindow/gas_potreb/Gazification', views.Gazification_home, name='Gazification'),
+    path('onewindow/gas_potreb/Stroy_gaz', views.Stroy_gaz_home, name='Stroy_gaz'),
+    path('onewindow/gas_potreb/Stroy_vvod', views.Stroy_vvod_home, name='Stroy_vvod'),
+    path('onewindow/gas_potreb/Your_save', views.Your_save_home, name='Your_save'),
+    path('onewindow/gas_potreb/Metan', views.Metan_home, name='Metan'),
 ]
 
 if settings.DEBUG:

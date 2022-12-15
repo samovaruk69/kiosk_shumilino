@@ -342,3 +342,44 @@ class prikaz(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Gazification(models.Model):
+    title = models.CharField(max_length=150)
+    Gazification_doc = models.FileField(upload_to='Gazification/')
+    times = models.DateField()
+
+    def __str__(self):
+        return self.title
+
+class Stroy_gaz(models.Model):
+    title = models.CharField(max_length=150)
+    Stroy_gaz_doc = models.FileField(upload_to='Stroy_gaz/')
+    times = models.DateField()
+
+    def __str__(self):
+        return self.title
+
+class Stroy_vvod(models.Model):
+    title = models.CharField(max_length=150)
+    Stroy_vvod_doc = models.FileField(upload_to='Stroy_vvod/')
+    times = models.DateField()
+
+    def __str__(self):
+        return self.title
+
+class Your_save(models.Model):
+    title = models.CharField(max_length=150)
+    Your_save_doc = models.FileField(upload_to='Your_save/')
+    times = models.DateField()
+
+    def __str__(self):
+        return self.title
+
+class Metan(models.Model):
+    title = models.CharField(max_length=150)
+    Metan_doc = models.FileField(upload_to='Metan/')
+    times = models.DateField()
+
+    def __str__(self):
+        return self.title
